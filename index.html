@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <span class="col-md-4 col-xs-12" id="left">
+                <h3>Search for a City:</h3>
+                <input class="form-control" type="text" placeholder="Enter zip code here" aria-label="Search">
+                <ul class="list-group"></ul>
+            </span>
+            <span class="col-md-8 col-xs-12" id="right">
+                <h1 class="forecastCity" id="city">New York</h1>
+                <div id="contentHeader" class="row">
+                    <img class="col-xs-6 col-sm-1" src="http://openweathermap.org/img/wn/02d@2x.png" id="icon">
+                    <p class="col-xs-6 col-sm-1" id="temp">37&#176</p>
+                </div>
+                <span id="content">
+                    <p id="type">Cloudy</p>
+                    <p id="humidity">Humidity: 62%</p>
+                    <p id="windSpeed">Wind speed: 12 mph</p>
+                </span>
+                <h2 class="forecastTitle" id="forecastFiveDay">Next 5 days in</h2>
+                <h1 class="forecastCity">New York</h1>
+                <div class="row" id="forecast">
+                    <span class="forecastBlocks col-xs-12" id="day0"></span>
+                    <span class="forecastBlocks col-xs-12" id="day1"></span>
+                    <span class="forecastBlocks col-xs-12" id="day2"></span>
+                    <span class="forecastBlocks col-xs-12" id="day3"></span>
+                    <span class="forecastBlocks col-xs-12" id="day4"></span>
+                </div>
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
